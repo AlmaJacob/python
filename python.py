@@ -16,3 +16,10 @@ print(type(l))
 k=10
 t=str(a)
 print(type(t))
+Name=input("enter your name")
+age=input("enter your age")
+weight=input("enter your age")
+
+print("Name:",Name)
+print("Age:",age)
+print("Weight:",weight)
