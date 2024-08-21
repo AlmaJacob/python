@@ -80,6 +80,7 @@
 #     print(a,'*',b,"=",a*b)
 #     a+=1
 
+#displaying sum of both odd and even
 # a=int(input("enter starting number "))
 # b=int(input('enter last number'))
 # n=0
