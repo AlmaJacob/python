@@ -14,10 +14,3 @@
 
 # 
       
-digit=int(input("enter a number"))
-l=%10
-
-
-       print("these digit is divisible by 3")
-else:
-        print("these digit is divisible by 3")

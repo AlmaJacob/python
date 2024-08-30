@@ -162,7 +162,7 @@
 #     names.append(name)
 # print(names)
 
-#print the details of a student in list using nested list
+#student management using nested list
 #---------------------------------------------------------
 
 # std=[]
@@ -178,24 +178,61 @@
 #we want to add,delete,update,view the list
 #-------------------------------------------------
 
-# std=[]
-# while True:
-#         print(""" 
-# 1.add std
-# 2.view std
-# 3.update std
-# 4.delete std
-#              """)
-#         choice=int(input("enter ur choice"))
-#         if choice==1:
-#                name=input("enter name")
-#                age=input("enter age") 
-#                mark=input("enter mark")
-#                std.append([name,age,mark])
-#         elif choice==2:
-#               print('{:<10}{:<6}{:<6}'.format("name","age","mark"))
-#               for i in std:
-#                       print('{:<10}{:<6}{:<6}'.format(i[0],i[1],i[2]))
+std=[]
+while True:
+        print(""" 
+1.add std
+2.view std
+3.update std
+4.delete std
+5.search std
+6.break  std
+             """)
+        choice=int(input("enter ur choice"))
+        if choice==1:
+               name=input("enter name")
+               age=input("enter age") 
+               mark=input("enter mark")
+               std.append([name,age,mark])
+        elif choice==2:
+              print('{:<10}{:<6}{:<6}'.format("name","age","mark"))
+              for i in std:
+                      print('{:<10}{:<6}{:<6}'.format(i[0],i[1],i[2]))
+        elif choice==3:
+               name=(input("enter your name"))
+               f=0
+               for i in std:
+                      if i[0]==name:
+                             age=int(input("enter the age"))
+                             i[1]=age
+                             f=1
+                             if f==0:
+                                    print("name not in list") 
+        elif choice==4:
+               name=(input("enter your name"))
+               f=0
+               for i in std:
+                      if i[0]==name:
+                           
+                             std.remove(i)
+                             f=1
+                             if f==0:
+                                    print("name not in list")
+        elif choice==5:
+               name=(input("enter your name"))
+               f=0
+               for i in std:
+                      if i[0]==name:
+                             print(i)
+                             f=1
+                             if f==0:
+                                    print("std not in list") 
+        elif choice==6:
+               break
+        else:
+          print("invalid choice")                                         
+                                
+
+
                     
-              
-                     
+                                   
