@@ -15,18 +15,18 @@ while True:
         id=int(input('Enter the id: '))
         name=input('enter your name: ')
         age=int(input('Enter your age: '))
-        phone_no=input('enter your position: ')
-        Dob=int(input('Enter your salary: '))
-        address=int(input('Enter your experience: '))
+        phone_no=input('enter your phone_no: ')
+        Dob=int(input('Enter your dob: '))
+        address=int(input('Enter your address: '))
         fees=int(input('Enter your fees: '))
-        vechicle_type=int(input('Enter your fees: '))
-        time=int(input('Enter your fees: '))
+        vechicle_type=int(input('Enter your vehicle type: '))
+        time=int(input('Enter your time: '))
 
         emp.append([id,name,age,phone_no,Dob,address,fees,vechicle_type,time])
     elif choice==2:
-        print('{:<5}{:<10}{:<5}{:<10}{:<10}{:<5}'.format("id","name","age","phone_no","Dob","address","fees","vechicle_type","time"))
+        print('{:<5}{:<10}{:<5}{:<10}{:<6}{:<15}{:<5}{:<6}{:<5}'.format("id","name","age","phone_no","Dob","address","fees","vechicle_type","time"))
         for i in emp:
-            print('{:<5}{:<10}{:<5}{:<10}{:<10}{:<5}'.format(i[0],i[1],i[2],i[3],i[4],i[5]))
+            print('{:<5}{:<10}{:<5}{:<10}{:<6}{:<15}{:<5}{:<6}{:<5}'.format(i[0],i[1],i[2],i[3],i[4],i[5],i[6],i[7],i[8]))
     elif choice==3:
         id=int(input('enter the id: '))
         f=0
@@ -34,7 +34,7 @@ while True:
             if i[0]==id:
                 f=1
                 while True:
-                    print('''1.age \n 2.position \n 3.salary \n 4.experience \n 5.exit''')
+                    print('''1. \n 2.position \n 3.salary \n 4.experience \n 5.exit''')
                     ch=int(input('choose any option :'))
                     if ch==1:
                         age=int(input("enter updated age: "))
