@@ -24,7 +24,7 @@ while True:
 
         emp.append([id,name,age,phone_no,Dob,address,fees,vechicle_type,time])
     elif choice==2:
-        print('{:<5}{:<10}{:<5}{:<10}{:<6}{:<15}{:<5}{:<6}{:<5}'.format("id","name","age","phone_no","Dob","address","fees","vechicle_type","time"))
+        print('{:<5}{:<10}{:<5}{:<10}{:<6}{:<15}{:<5}{:<6}{:<5}'.format("id","name","age","phone_no","Dob","adress","fees","vechicle_type","time"))
         for i in emp:
             print('{:<5}{:<10}{:<5}{:<10}{:<6}{:<15}{:<5}{:<6}{:<5}'.format(i[0],i[1],i[2],i[3],i[4],i[5],i[6],i[7],i[8]))
     elif choice==3:
@@ -34,21 +34,30 @@ while True:
             if i[0]==id:
                 f=1
                 while True:
-                    print('''1. \n 2.position \n 3.salary \n 4.experience \n 5.exit''')
+                    print('''1.age \n 2.phone_no \n 3.dob \n 4.adress \n 5.fees \n 6.vechicle_type \n 7.time \n 8.exit \n ''')
                     ch=int(input('choose any option :'))
                     if ch==1:
                         age=int(input("enter updated age: "))
                         i[2]=age
                     elif ch==2:
-                        poition=input('enter updated position: ')
-                        i[3]=poition
+                        phone_no=input('enter updated phone_no: ')
+                        i[3]=phone_no
                     elif ch==3:
-                        salary=input('enter updated salary: ')
-                        i[4]=salary
+                        dob=input('enter updated salary: ')
+                        i[4]=dob
                     elif ch==4:
-                        exp=int(input('enter updated experience: '))
-                        i[5]=exp
+                        adress=int(input('enter updated experience: '))
+                        i[5]=adress
                     elif ch==5:
+                        fees=int(input('enter updated experience: '))
+                        i[6]=fees
+                    elif ch==6:
+                        vechicle_type=int(input('enter updated experience: '))
+                        i[7]=vechicle_type
+                    elif ch==7:
+                        adress=int(input('enter updated experience: '))
+                        i[5]=adress
+                    elif ch==8:
                         break
                     else:
                         print('please choose an valid option :')
