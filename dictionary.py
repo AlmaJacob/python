@@ -181,13 +181,28 @@
 
 #task3
 #-------
-a={}
-num=int(input("enter a number :"))
-for i in range(num+1):
-    if i%2==0:
-        a[i]=i*i
+# a={}
+# num=int(input("enter a number :"))
+# for i in range(num+1):
+#     if i%2==0:
+#         a[i]=i*i
           
-    else:
-        a[i]=i*i*i 
-print(a)
+#     else:
+#         a[i]=i*i*i 
+# print(a)
 
+#task4(print 123 and get input as 123 in letters)
+#----------
+# num=int(input("enter a number"))
+# numbers={0:"zero",1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine"}
+# s=""
+# while num>0:
+#    a=num%10
+#    s=numbers[a]+" "+s
+#    num//=10
+# print(s)
+    
+l=[{'name':"anu","age":21,"lang":['mal',"eng"]}]
+lg=input("enter the language")
+l[0]["lang"].append()
+print(l)

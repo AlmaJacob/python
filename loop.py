@@ -123,13 +123,13 @@
    
 #print string top to bottum using while loop
 
-j=input("enter a string")
-l=len(j)
-i=0
-rev=""
-while i<l:
-    rev=j[i]+rev
+# j=input("enter a string")
+# l=len(j)
+# i=0
+# rev=""
+# while i<l:
+#     rev=j[i]+rev
     
-    i+=1
-print(rev)    
+#     i+=1
+# print(rev)    
 
