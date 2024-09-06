@@ -201,7 +201,10 @@
 #    s=numbers[a]+" "+s
 #    num//=10
 # print(s)
-    
+
+
+#task5
+#-------   
 l=[{'name':"anu","age":21,"lang":['mal',"eng"]}]
 lg=input("enter the language")
 l[0]["lang"].append()
