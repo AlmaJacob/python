@@ -63,3 +63,83 @@
 # s={1,5,3,36,2,6}
 # s.update({4,6,3,2,622})
 # print(s)
+#9.intersection(used to display common elements in a set)
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# print(s.intersection(s2))
+
+
+#10.union(to display both set together)
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# print(s2.union(s))
+
+
+#11.isdisjoint(if common elements is present display true neither false)
+# s={1,2,3,4,5}
+# s2={8,6,7}
+# print(s.isdisjoint(s2))
+
+#12.issubset
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# print(s.issubset(s2))
+
+#13.issuperset(opposite of subset)
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# print(s.issuperset(s2))
+
+#14.symmetric_difference
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# print(s.symmetric_difference(s2))
+
+#***updation methods in set***
+#15.symmetric diffrence update
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# (s.symmetric_difference_update(s2))
+# print(s)
+
+#16.difference update
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# (s.difference_update(s2))
+# print(s)
+
+#17.intersection update
+# s={1,2,3,4,5}
+# s2={1,2,3,4,6,7}
+# (s.intersection_update(s2))
+# print(s)
+
+#prgrm
+python=set()
+a=int(input("enter a limit in python : "))
+for i in range(a):
+ name=input("enter a name :")
+ python.add(name)
+ print(python)
+
+php=set()
+a=int(input("enter a limit in php : "))
+for i in range(a):
+ name=input("enter a name :")
+ php.add(name)
+ print(php)
+ 
+ java=set()
+a=int(input("enter a limit in java : "))
+for i in range(a):
+ name=input("enter a name :")
+ java.add(name)
+ print(java)
+
+#  a=(python.intersection(php))
+#  a.intersection(java)
+#  print("common",a)
+
+ a=(python.difference(php))
+ a.difference(java)
+ print("only in python",a)

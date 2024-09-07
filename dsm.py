@@ -39,13 +39,13 @@ while True:
                         i[2]=age
                     elif ch==2:
                         fees=input('enter updated fees: ')
-                        i[3]=fees
+                        i[6]=fees
                     elif ch==3:
                         vechicle_type=input('enter update vechicle type: ')
-                        i[4]=vechicle_type
+                        i[7]=vechicle_type
                     elif ch==4:
                         time=int(input('enter updated time: '))
-                        i[5]=time
+                        i[6]=time
                    
                     elif ch==5:
                         break
