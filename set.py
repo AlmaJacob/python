@@ -115,31 +115,31 @@
 # print(s)
 
 #prgrm
-python=set()
-a=int(input("enter a limit in python : "))
-for i in range(a):
- name=input("enter a name :")
- python.add(name)
- print(python)
+# python=set()
+# a=int(input("enter a limit in python : "))
+# for i in range(a):
+#  name=input("enter a name :")
+#  python.add(name)
+#  print(python)
 
-php=set()
-a=int(input("enter a limit in php : "))
-for i in range(a):
- name=input("enter a name :")
- php.add(name)
- print(php)
+# php=set()
+# a=int(input("enter a limit in php : "))
+# for i in range(a):
+#  name=input("enter a name :")
+#  php.add(name)
+#  print(php)
  
- java=set()
-a=int(input("enter a limit in java : "))
-for i in range(a):
- name=input("enter a name :")
- java.add(name)
- print(java)
+#  java=set()
+# a=int(input("enter a limit in java : "))
+# for i in range(a):
+#  name=input("enter a name :")
+#  java.add(name)
+#  print(java)
 
-#  a=(python.intersection(php))
-#  a.intersection(java)
-#  print("common",a)
+# #  a=(python.intersection(php))
+# #  a.intersection(java)
+# #  print("common",a)
 
- a=(python.difference(php))
- a.difference(java)
- print("only in python",a)
+#  a=(python.difference(php))
+#  a.difference(java)
+#  print("only in python",a)
