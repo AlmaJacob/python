@@ -31,7 +31,7 @@
 # a//=5 # //=
 # print(a)
 
-# #coparison operator
+# #comparison operator
 
 # print(5==5) # ==
 # print("alma"=="aalma")
@@ -142,7 +142,7 @@
 #False
 
 # equal to in the case of string
-r
+
 # l="anu"
 # k='aju'
 # print(l == k)

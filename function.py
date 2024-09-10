@@ -80,3 +80,26 @@
 # print(a1)
 # print(b1)
 # print(c1)
+
+
+# functional arguments
+#---------------------------
+#types of functional arguments
+#-------------------------------
+#positional arguments
+#---------------------
+# def dtls(age,name):
+#     print("age =",age)
+#     print('name =',name)
+
+# dtls(21,'anu')
+# dtls(31,"jake")
+
+
+#keyword argument
+#-------------------
+# def dtls(age,name):
+#     print("age =",age)
+#     print('name =',name)
+
+# dtls(name="hari",age="23") 
