@@ -4,11 +4,16 @@ def login():
     username=input("enter username :")
     password=input("enter password :")
     f=0
+    user=''
     if username=="admin" and password=="admin":
-     f=1
-    return f
+        f=1
+    for i in emp:
+       if i["id"]==username and i["dob"]==password:
+            f=2
+            user=i
+    return f,user
 def add_emp():
-    id=int(input("enter id :"))
+    id=str(input("enter id :"))
     f1=0
     for i in emp:
         if i["id"]==id:
@@ -24,7 +29,7 @@ def add_emp():
       emp.append({"id":id,"name":name,"age":age,"salary":salary,"place":place,"dob":dob})
 
 def update():
-    id=int(input("enter id :"))
+    id=str(input("enter id :"))
     f1=0
     for i in emp:
         if i["id"]==id:
@@ -44,7 +49,7 @@ def update():
     if f1==0:
             print("invalid id") 
 def delete():
-    id=int(input("enter id :"))
+    id=str(input("enter id :"))
     f1=0
     for i in emp:
         if i["id"]==id:
@@ -56,16 +61,18 @@ def display():
     print('{:<5}{:<10}{:<5}{:<15}{:<10}{:<18}'.format("id","name","age","salary","place","dob"))
     for i in emp:
             print('{:<5}{:<10}{:<5}{:<15}{:<10}{:<18}'.format(i["id"],i["name"],i["age"],i["salary"],i["place"],i["dob"]))
+def view_profile(user):
+    print(user)            
 
 while True:
    print("""
 1.login
 2.exit
-3.logout         
+          
 """)
    ch=int(input("enter ur choice :"))
    if ch==1:
-      f=login()
+      f,user=login()
       if f==1:
          while True:
             print('''
@@ -73,6 +80,7 @@ while True:
                 2.update
                 3.delete
                 4.display
+                5.logout  
             ''')
             sub_ch=int(input("enter ur sub choice :"))
             if sub_ch==1:
@@ -83,9 +91,19 @@ while True:
                 delete()
             elif sub_ch==4:
                 display()
-elif ch==3:
-break
-    else:
-        print("invalid choice") 
+            elif sub_ch==5:
+                break
+            elif f==0:
+              print("invalid password or username")
+            elif f==2:
+              while True:
+                print("""
+                   1.view profile
+                   2.edit profile
+                   3.logout 
+""")
 
+                sub_ch=int(input("enter ur choice :"))
+                if sub_ch==1:
+                    view_profile(user)  
             
