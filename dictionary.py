@@ -205,7 +205,7 @@
 
 #task5
 #-------   
-l=[{'name':"anu","age":21,"lang":['mal',"eng"]}]
-lg=input("enter the language")
-l[0]["lang"].append()
-print(l)
+# l=[{'name':"anu","age":21,"lang":['mal',"eng"]}]
+# lg=input("enter the language")
+# l[0]["lang"].append()
+# print(l)

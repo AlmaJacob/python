@@ -39,30 +39,30 @@
  #   print("5%")
 #    costprc=cost*0.05
  #   print("tax" is costprc)
-unit=int(input("enter no of units used"))
-if unit<=100:
-    print("there is no charge")
-elif unit<=200:
-   a=(unit-100*5)
-   print(a)
-else :
-    a=((unit-200)*10)+500
-    print(a)
+# unit=int(input("enter no of units used"))
+# if unit<=100:
+#     print("there is no charge")
+# elif unit<=200:
+#    a=(unit-100*5)
+#    print(a)
+# else :
+#     a=((unit-200)*10)+500
+#     print(a)
 
 
-#nested if
-e=int(input("enter 1st no"))
-f=int(input("enter 2nd no"))
-g=int(input("enter 3rd no"))
-if e<f:
-    if e>g:
-        print(e,"is largest")
-    else:
-        print(g,"is largest")
-else:
-    if f>g:
-        print(f,"is gratest")
-    else:
-        print(g,"is gratest")
+# #nested if
+# e=int(input("enter 1st no"))
+# f=int(input("enter 2nd no"))
+# g=int(input("enter 3rd no"))
+# if e<f:
+#     if e>g:
+#         print(e,"is largest")
+#     else:
+#         print(g,"is largest")
+# else:
+#     if f>g:
+#         print(f,"is gratest")
+#     else:
+#         print(g,"is gratest")
 
     
