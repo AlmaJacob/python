@@ -33,5 +33,3 @@ print(letters)
 print('capital',cap)
 print('small',letters-cap)
 print('words',words)
-
-
