@@ -17,5 +17,4 @@ for i in l:
          if type(i)==int or type(i)==float:
           sum=sum+i
 print(sum)
- 
-
+    
