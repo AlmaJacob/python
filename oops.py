@@ -180,6 +180,128 @@
 
 #hybrid inheritance
 #----------------------
+#eg:1
+# class synnefo:
+#     def python(self):
+#         print("python")
+#     def php(self):
+#         print("php")
+#     def networking(self):
+#         print("networking")
+#     def python(self):
+#         print("digital marketing")
+#     def registration(self):
+#         print("regisration")
+# class non_teaching_staff(synnefo):
+#     def accounts(self):
+#         print("accounts")
+#     def front_office(self):
+#         print("front_office")
+#     def devolpment_team(self):
+#         print("development_team")
+# class teaching_staff(synnefo):
+#     def notes(self):
+#         print("notes")
+#     def attendance(self):
+#         print("attendance")
+# class student(teaching_staff):
+#     def accesing_notes(self):
+#         print("accesing_notes")
+#     def accesing_lab(self):
+#         print("accesing_lab")            
+# ajay=synnefo()
+# ajay.networking()
+# ajay.php()
+# ajay.python()
+# ajay.registration()
+# arun=non_teaching_staff()
+# arun.accounts()
+# arun.devolpment_team()
+# arun.front_office()
+# arun.networking()
+# arun.php()
+# arun.python()
+# arun.registration()
+# hema=teaching_staff()
+# hema.attendance()
+# hema.networking()
+# hema.notes()
+# hema.php()
+# hema.python()
+# hema.registration()
+# alen=student()
+# alen.networking()
+# alen.php()
+# alen.python()
+# alen.registration()
+# alen.accesing_lab()
+# alen.accesing_notes()
+# alen.notes()
+# alen.attendance()
 
+# #eg:2
+# class restaurnt:
+#     def managing_resturant(self):
+#         print("managing resurant")
+# class food_items(restaurnt):
+#     def menu(self):
+#         print("menu")           
+# class owner(restaurnt):
+#     def profit(self):
+#         print("profit")
+# class manager(owner):
+#     def accesing_staff_details(self):
+#         print("accesing staff details")  
+#     def managing_accounting_section(self):
+#         print("managing_accounting_section")
+# class staff(manager):
+#     def managing_staff_details(self):
+#         print("managing staff details")
+# class waiter(staff):
+#     def serving_food(self):
+#         print("serving food")
+#     def cleaning_section(self):
+#         print("cleaning section")
+#     def taking_order(self):
+#         print("taking order")    
+# class cheif(staff):
+#     def making_food(self):
+#         print("making food")
+# class customer:
+#     def giving_order(self):
+#         print("giving order")                                                             
+    
+# hayatil_restaurant=restaurnt()
+# hayatil_restaurant.managing_staff()
+# hayatil_restaurant.menu()
+# meals=food_items()
+# meals.managing_resturant()
+# meals.menu()
+# jeevan=owner()
+# jeevan.managing_resturant()
+# jeevan.profit()
+# karun=staff()
+# karun.profit()
+# karun.accesing_staff_details()
+# karun.managing_accounting_section()
+# karun.managing_staff_details()
+# karun.managing_resturant()
+# athul=cheif
+# athul.managing_resturant()
+# athul.accesing_staff_details()
+# athul.making_food()
+# athul.managing_accounting_section()
+# athul.managing_staff_details()
+# athul.profit()
 
-
+#polymorphism
+#------------------
+#method overriding
+# class bank:
+#     def __init__(self):
+#         print("add bank dtls")
+# class user(bank):
+#     def __init__(self):
+#         print("add user dtls")
+# sbi=bank()
+# anu=user()
