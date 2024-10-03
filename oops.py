@@ -303,5 +303,42 @@
 # class user(bank):
 #     def __init__(self):
 #         print("add user dtls")
-# sbi=bank()
-# anu=user()
+        
+# arun=user()
+
+#2nd type
+# class school:
+#     def notes(self,sub):
+#         print("notes for",sub)
+# class std(school):
+#     def notes(self,sub):
+#         super().notes(sub)  
+#         print("notes for std")
+       
+# ajay=std()
+# ajay.notes("python")
+
+# #data abstraction
+#-----------------
+from abc import ABC,abstractmethod
+class syn(ABC):
+    @abstractmethod
+    def reg(self):
+        pass
+    def python(self):
+        print("pyton topics")
+    def php(self):
+        print("php topics")
+class staff (syn):
+    def reg(self):
+        print("staff details")
+    def notes(self):
+        print("notes")
+class student(syn):
+    def reg(self):
+        print("std data")
+    def exam(self):
+        print("exam")            
+staff1=staff()
+arun=student()                  
+                  
