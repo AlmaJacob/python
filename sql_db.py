@@ -1,5 +1,17 @@
-import sqlite3
-con=sqlite3.connect("python/sql1.db")
+# import sqlite3
+# #create a table 
+
+# con=sqlite3.connect("python/sql1.db")
+# try:
+#     con.execute("create table std (roll_no int,name text,age int, mark real)")
+# except:
+#     print("table exists")
+
+ #adding values into databse
+  # con.execute("insert into std(roll_no,name,age,mark)values(2,ajay,26,46),(7,alen,28,78)")   
+
+
+
 #                                                                                                                                                                                                                        
 # limit=int(input("enter a limit"))
 # for i in range(limit):
@@ -46,6 +58,25 @@ con=sqlite3.connect("python/sql1.db")
 # con.commit()
 
 #deletion using user input
-name=input("enter name to delete ")
-con.execute("delete from students where name=?",(name,))
-con.commit()
+# name=input("enter name to delete ")
+# con.execute("delete from students where name=?",(name,))
+# con.commit()
+
+#select a value from database
+# data=con.execute("select * from students where name like '__e%'")
+# for i in data:
+#     print(i)
+
+
+#to make ascending order of  values of database using order by 
+# data=con.execute("select * from students order by name ")
+# for i in data:
+#     print(i) 
+
+
+#to make descending order of  values of database usin order by
+# data=con.execute("select * from students order by name desc")
+# for i in data:
+#     print(i)     
+
+#to avoid duplicates using group by
