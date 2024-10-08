@@ -1,7 +1,7 @@
 import sqlite3
 con=sqlite3.connect("python/emp_dbse.db")
 try:
-    con.execute("create table employee(id int,name text,age int,position text,exp text,salary int)")
+    con.execute("create table emp(id int,name text,age int,position text,exp text,salary int)")
 except:
     print("table exist")    
 emp=[]
@@ -12,8 +12,8 @@ while True:
 3.delete employee
 4.update employee
 5.search employee""")
-    choice=int(input("enter ur choice : "))
-    if choice==1:
+    ch=int(input("enter ur choice : "))
+    if ch==1:
         id=int(input("enter id of employee : "))
         name=input("enter name of employee : ")
         age=int(input("enter age of employee :"))
